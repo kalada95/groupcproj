@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   border: red solid 1px;
 }
+
   
   h1 {
     font-size: 28px;
@@ -28,7 +29,6 @@ body {
     gap: 30px;
     padding: 20px;
     background: #fff;
-    border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.06); 
     align-items: flex-start;
     margin-bottom: 30px;
@@ -44,7 +44,6 @@ body {
     width: 610px;
     height: 305px;
     object-fit: cover;
-    border-radius: 8px;
   }
   
   .product-info {
@@ -99,54 +98,73 @@ body {
 
   /*auction sec*/
   .upcoming-auctions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f3f3f3;
-    padding: 60px;
-    border-radius: 20px;
-    margin: 60px 0;
-  }
-  
-  .upcoming-auctions .content {
-    max-width: 500px;
+    background: linear-gradient(to right, #4693ED, #79C2D2, #f5b486); /* background gradient */
+    padding: 2rem 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
   }
   
   .upcoming-auctions h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .upcoming-auctions p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  
-  .upcoming-auctions .btn {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
     display: inline-block;
-    padding: 12px 24px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
   }
   
-  .upcoming-auctions .image img {
-    max-width: 400px;
-    border-radius: 15px;
-  }
-
-  .btn {
-    padding: 12px 24px;
-    background-color: black;
+  .auction-card {
+    position: relative;
+    background-image: url('Rectangle 91.png'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
-
+  
+  .card-content .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  
+  .card-content .start-time {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content .description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .auction-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* aligns to the right */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  
+  .auction-buttons .btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
   /*explore*/
   .explore {
     margin-left: auto;
@@ -198,4 +216,3 @@ body {
     max-width: 7px;
     border-radius: 7px;
   }
-  
